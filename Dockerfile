@@ -28,6 +28,8 @@ RUN set -e \
   php7-tokenizer \
   php7-xmlwriter \
   php7-zlib \
+  php7-dom \
+  php7-xml \
   && curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/bin \
   && composer global require drupal/coder --update-no-dev --no-suggest --prefer-dist ^8.2 \
   && ln -s /root/.composer/vendor/bin/phpcs /usr/bin/phpcs \
